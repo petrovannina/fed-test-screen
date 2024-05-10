@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+.layout {
+  background-color: #2A3035;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+.layout h1, 
+.layout h3 {
+  margin: 0;
+}
+
+.layout h1 {
+  font-size: 48px;
+}
+
+.layout h3 {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.layout header,
+.layout footer {
+  background-color: #22272B;
+}
+
+.layout header {
+  padding: 20px;
+}
+
+.layout footer {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.layout article {
+  text-align: center;
+}
+
+.layout article img {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.layout a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.layout a:hover {
+  transform: scale(1.05);
+}
+
+.layout a span {
+  opacity: 0.5;
+}
+
+.layout_inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.layout_header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Begin styling the report items here! */ 
+
+.reports {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+  margin: 0 auto;
+}
+
+.repos_item {
+  width: 100%;
+}
+
+@media screen and (min-width: 576px) {
+  .reports {
+    justify-content: start;
+  }
+
+  .reports_item {
+    width: calc(50% - 30px);
+  }
+
+  .layout_container {
+    margin-right: -30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .reports_item {
+    width: calc(33.33% - 30px);
+  }
+}
